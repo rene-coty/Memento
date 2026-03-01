@@ -25,8 +25,7 @@
                       </object>
                     </child>
                     <property name="title-widget">
-                      <object class="AdwViewSwitcher" id="main_view_switcher">
-                        <property name="policy">wide</property>
+                      <object class="AdwViewSwitcherTitle" id="main_view_switcher_title">
                         <property name="stack">main_stack</property>
                       </object>
                     </property>
@@ -38,6 +37,14 @@
                         <property name="menu-model">primary_menu</property>
                       </object>
                     </child>
+                  </object>
+                </child>
+                <child type="bottom">
+                  <object class="AdwViewSwitcherBar" id="main_view_switcher_bar">
+                    <property name="stack">main_stack</property>
+                    <binding name="reveal">
+                      <lookup name="title-visible">main_view_switcher_title</lookup>
+                    </binding>
                   </object>
                 </child>
                 <property name="content">

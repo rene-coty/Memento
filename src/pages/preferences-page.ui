@@ -2,8 +2,10 @@
 <interface domain="memento">
   <requires lib="gtk" version="4.0" />
   <requires lib="Adw" version="1.0" />
-  <template class="MementoPreferencesPage" parent="AdwNavigationPage">
+  <template class="MementoPreferencesDialog" parent="AdwDialog">
     <property name="title" translatable="yes">Preferences</property>
+    <property name="content-width">760</property>
+    <property name="content-height">700</property>
     <property name="child">
       <object class="AdwToolbarView">
         <child type="top">

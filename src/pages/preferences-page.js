@@ -12,8 +12,8 @@ const SETTINGS_SCHEMA_ID = (GLib.getenv('FLATPAK_ID') || '').endsWith('.Devel')
     ? 'io.github.ans_ibrahim.Memento.Devel'
     : 'io.github.ans_ibrahim.Memento';
 
-export const MementoPreferencesPage = GObject.registerClass({
-    GTypeName: 'MementoPreferencesPage',
+export const MementoPreferencesDialog = GObject.registerClass({
+    GTypeName: 'MementoPreferencesDialog',
     Template: 'resource:///app/memento/memento/pages/preferences-page.ui',
     InternalChildren: [
         'api_key_row',
@@ -27,7 +27,7 @@ export const MementoPreferencesPage = GObject.registerClass({
         'refresh_imdb_progress_bar',
         'refresh_imdb_progress_row',
     ],
-}, class MementoPreferencesPage extends Adw.NavigationPage {
+}, class MementoPreferencesDialog extends Adw.Dialog {
     constructor(params = {}) {
         super(params);
         this._settings = new Gio.Settings({ schema_id: SETTINGS_SCHEMA_ID });

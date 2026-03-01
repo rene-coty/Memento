@@ -24,7 +24,7 @@ import Gio from 'gi://Gio';
 
 import { MementoSearchDialog } from './dialogs/search-dialog.js';
 import { MementoMovieDetailPage } from './pages/movie-detail-page.js';
-import { MementoPreferencesPage } from './pages/preferences-page.js';
+import { MementoPreferencesDialog } from './pages/preferences-page.js';
 import { MementoPersonPage } from './pages/person-page.js';
 import { MementoTopPeoplePage } from './pages/top-people-page.js';
 import { MementoWatchlistPage } from './pages/watchlist-page.js';
@@ -393,8 +393,8 @@ export const MementoWindow = GObject.registerClass({
     }
 
     _showPreferencesPage() {
-        const preferencesPage = new MementoPreferencesPage();
-        this._navigation_view.push(preferencesPage);
+        const preferencesDialog = new MementoPreferencesDialog();
+        preferencesDialog.present(this);
     }
 
     _showPlacesDialog() {
