@@ -66,6 +66,17 @@
   </screenshots>
 
   <releases>
+    <release version="1.1.1" date="2026-03-03">
+      <description>
+        <p>La Haine</p>
+        <ul>
+          <li>Added French Translations</li>
+          <li>UI polish and layout fixes across key pages</li>
+          <li>Minor preferences and navigation improvements</li>
+        </ul>
+      </description>
+      <url type="details">https://github.com/ans-ibrahim/Memento/releases/tag/v1.1.1</url>
+    </release>
     <release version="1.1.0" date="2026-02-28">
       <description>
         <p>Reservoir Dogs</p>
@@ -77,7 +88,7 @@
           <li>Some minor changes</li>
         </ul>
       </description>
-      <url type="details">https://github.com/ans-ibrahim/Memento/releases/tag/v1.0.1</url>
+      <url type="details">https://github.com/ans-ibrahim/Memento/releases/tag/v1.1.0</url>
     </release>
     <release version="1.0.0" date="2026-02-13">
       <description>
